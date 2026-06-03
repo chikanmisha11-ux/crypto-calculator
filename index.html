@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bubbles-bg">
+  <iframe
+    src="https://cryptobubbles.net/"
+    class="bubbles-frame"
+  ></iframe>
+</div>
+
+<div class="calculator">
+
+  <h1>Crypto Calculator</h1>
+
+  <p>Binance API • Crypto ⇄ Money</p>
+
+  <div class="switch-box">
+
+    <button id="cryptoToMoneyBtn" class="active">
+      Крипта → гроші
+    </button>
+
+    <button id="moneyToCryptoBtn">
+      Гроші → крипта
+    </button>
+
+    <button id="moneyToMoneyBtn">
+      Гроші → гроші
+    </button>
+
+    <button id="cryptoToCryptoBtn">
+      Крипта → крипта
+    </button>
+
+  </div>
+
+  <label>Сума</label>
+
+  <input
+    type="number"
+    id="amount"
+    value="1"
+    min="0"
+  >
+
+  <div id="coinBox">
+
+    <label>Криптовалюта</label>
+
+    <input
+      list="coinList"
+      id="coin"
+      placeholder="BTC, ETH, TON..."
+    >
+
+    <datalist id="coinList"></datalist>
+
+  </div>
+
+  <div id="currencyBox">
+
+    <label>Валюта</label>
+
+    <select id="currency"></select>
+
+  </div>
+
+  <div id="secondCurrencyBox">
+
+    <label>У яку валюту</label>
+
+    <select id="secondCurrency"></select>
+
+  </div>
+
+  <div id="secondCoinBox">
+
+    <label>У яку криптовалюту</label>
+
+    <input
+      list="secondCoinList"
+      id="secondCoin"
+      placeholder="SOL, DOGE..."
+    >
+
+    <datalist id="secondCoinList"></datalist>
+
+  </div>
+
+  <button
+    class="calculate-btn"
+    onclick="calculate()"
+  >
+    Порахувати
+  </button>
+
+  <div class="result" id="result">
+    Результат буде тут
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
