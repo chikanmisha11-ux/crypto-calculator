@@ -122,16 +122,20 @@ body{
 #cryptoToMoneyBtn{
     width:100%;
 
+}
+
+.switch-box button.active{
+
     background:linear-gradient(
         135deg,
-        #43f34f,
-        #59ff41
+        #39ff4d,
+        #67ff38
     );
 
     color:#111;
 
     box-shadow:
-        0 4px 12px rgba(0,0,0,0.25),
+        0 0 18px rgba(57,255,77,0.45);
 }
 
 #cryptoToCryptoBtn,
@@ -262,6 +266,16 @@ input::placeholder{
         font-size:15px;
         padding:16px;
     }
+
+    .switch-box button.active{
+    background:linear-gradient(
+        135deg,
+        #43f34f,
+        #59ff41
+    );
+
+    color:#111;
+}
 
     #cryptoToCryptoBtn,
     #moneyToMoneyBtn{
