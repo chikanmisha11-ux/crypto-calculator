@@ -98,15 +98,6 @@ document.getElementById(
 };
 
 document.getElementById(
-  "moneyToCryptoBtn"
-).onclick = function () {
-
-  mode = "moneyToCrypto";
-
-  updateMode(this);
-};
-
-document.getElementById(
   "moneyToMoneyBtn"
 ).onclick = function () {
 
@@ -156,13 +147,6 @@ function updateMode(activeButton) {
     coinBox.style.display = "block";
 
     currencyBox.style.display = "block";
-  }
-
-  if (mode === "moneyToCrypto") {
-
-    currencyBox.style.display = "block";
-
-    coinBox.style.display = "block";
   }
 
   if (mode === "moneyToMoney") {
