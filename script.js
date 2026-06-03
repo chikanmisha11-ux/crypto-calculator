@@ -299,5 +299,21 @@ async function createBubbles() {
   }
 }
 
+const buttons = document.querySelectorAll(".switch-box button");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+    });
+
+});
+
 createBubbles();
 setInterval(createBubbles, 20000);
